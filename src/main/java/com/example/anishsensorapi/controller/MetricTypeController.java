@@ -34,9 +34,9 @@ public class MetricTypeController {
          * @param metricType The metric type to be added. It must contain a
          * unique name.
          * @return ResponseEntity<?>
-         * - 200 OK: If the metric is successfully added. - 409 Conflict: If a
-         * metric with the same name already exists. - 500 Internal Server
-         * Error: If an error occurs during the operation.
+         * - 200 OK: If the metric is successfully added. 
+         * - 409 Conflict: If a metric with the same name already exists. 
+         * - 500 Internal Server Error: If an error occurs during the operation.
          */
         try {
             if (metricRepo.existsById(metricType.getName())) {
@@ -55,8 +55,8 @@ public class MetricTypeController {
          * Retrieves all metric types from the database.
          *
          * @return ResponseEntity<?>
-         * - 200 OK: A list of all metric types. - 500 Internal Server Error: If
-         * an error occurs during the operation.
+         * - 200 OK: A list of all metric types. 
+         * - 500 Internal Server Error: If an error occurs during the operation.
          */
         try {
             List<MetricType> metrics = metricRepo.findAll();

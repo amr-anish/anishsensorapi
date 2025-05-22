@@ -37,9 +37,9 @@ public class SensorController {
          * @param sensor The sensor object to be added. It must contain a unique
          * ID.
          * @return ResponseEntity<?>
-         * - 200 OK: If the sensor is successfully added. - 409 Conflict: If a
-         * sensor with the same ID already exists. - 500 Internal Server Error:
-         * If an error occurs during the operation.
+         * - 200 OK: If the sensor is successfully added. 
+         * - 409 Conflict: If a sensor with the same ID already exists. 
+         * - 500 Internal Server Error: If an error occurs during the operation.
          */
         try {
             if (sensorRepo.existsById(sensor.getId())) {
@@ -59,8 +59,8 @@ public class SensorController {
          * Retrieves all sensors from the database.
          *
          * @return ResponseEntity<?>
-         * - 200 OK: A list of all sensors. - 500 Internal Server Error: If an
-         * error occurs during the operation.
+         * - 200 OK: A list of all sensors. 
+         * - 500 Internal Server Error: If an error occurs during the operation.
          */
         try {
             List<Sensor> sensors = sensorRepo.findAll();
@@ -77,9 +77,9 @@ public class SensorController {
          *
          * @param id The ID of the sensor to be retrieved.
          * @return ResponseEntity<?>
-         * - 200 OK: If the sensor is found. - 404 Not Found: If the sensor with
-         * the given ID does not exist. - 500 Internal Server Error: If an error
-         * occurs during the operation.
+         * - 200 OK: If the metrics are successfully retrieved. 
+         * - 400 Bad Request: If the input is invalid. 
+         * - 500 Internal Server Error: If an error occurs during the operation.
          */
         try {
             Optional<Sensor> sensors = sensorRepo.findById(id);

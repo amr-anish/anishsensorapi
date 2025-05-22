@@ -33,9 +33,9 @@ public class WeatherController {
          * @param request The upload request containing sensor ID, metrics, and
          * timestamp.
          * @return ResponseEntity<?>
-         * - 200 OK: If the metrics are successfully uploaded. - 400 Bad
-         * Request: If the input is invalid. - 500 Internal Server Error: If an
-         * error occurs during the operation.
+         * - 200 OK: If the metrics are successfully uploaded. 
+         * - 400 Bad Request: If the input is invalid. 
+         * - 500 Internal Server Error: If an error occurs during the operation.
          */
         try {
             return ResponseEntity.ok(weatherService.uploadMetrics(request));
@@ -54,9 +54,9 @@ public class WeatherController {
          * @param request The query request containing sensor IDs, metric types,
          * statistic, and period.
          * @return ResponseEntity<?>
-         * - 200 OK: If the metrics are successfully retrieved. - 400 Bad
-         * Request: If the input is invalid. - 500 Internal Server Error: If an
-         * error occurs during the operation.
+         * - 200 OK: If the metrics are successfully retrieved. 
+         * - 400 Bad Request: If the input is invalid. 
+         * - 500 Internal Server Error: If an error occurs during the operation.
          */
         try {
             return ResponseEntity.ok(weatherService.queryMetrics(request));
