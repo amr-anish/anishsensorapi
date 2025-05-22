@@ -206,7 +206,6 @@ If using IntelliJ, you can run the tests directly from the IDE. [AnishsensorapiA
 
 ### References
 
-Here are some of the resources that were helpful in building this project:
 
 * [Using SQLite with Spring Boot](https://www.baeldung.com/spring-boot-sqlite)
 * [Testing Spring Boot Applications](https://reflectoring.io/spring-boot-test/)
